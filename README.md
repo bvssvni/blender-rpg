@@ -16,3 +16,11 @@ TODO:
 3. Make the camera follow the character.  
 4. Add mouse cursor to click and interact with objects.
 
+##Zombies
+
+When nearer that 5 units from the player, they starts walking toward it.  
+
+When they get closer than 1 unit from the player, the player starts loosing life.  
+
+When they get farther than 10 units, they forget the player, but continues to walk in same direction.
+
