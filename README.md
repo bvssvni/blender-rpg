@@ -12,9 +12,12 @@ Control the character movement with W, A, S, D.
 TODO:
 
 1. Create a Magica, Health and Stamina bar.  
-2. Add one object for Enemy, Item and Gate.  
-3. Make the camera follow the character.  
-4. Add mouse cursor to click and interact with objects.
+2. Make Player loose health when getting close zombies.  
+3. Add a way to kill zombies. Suggestions:
+3.1. Trick them into holes.
+3.2. Shoot magic bullets.
+3.3. Hit them with a sword.
+4. Add a gate that opens when all enemies are killed.
 
 ##Zombies
 
