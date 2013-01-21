@@ -57,11 +57,9 @@ On Mac, start Blender from the Terminal to get the output from "print" statement
     cd ../../Applications/blender.app/Contents/MacOS
     ./blender
     
-Some useful functions:
+Some useful functions for debugging:
 
     dir(obj)    Prints out functions and properties of object or module.
     
     print(msg)  Prints out a message to the console.
     
-    bge.logic.getCurrentController()
-                Gets the controller that 
