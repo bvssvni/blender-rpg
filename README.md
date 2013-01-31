@@ -33,43 +33,8 @@ When they get closer than 1 unit from the player, the player starts loosing life
 
 When they get farther than 10 units, they forget the player, but continues to walk in same direction.
 
-##Running Python Scripts
+##Python Scripts
 
-The sensor 'Delay' with 'Repeat' set to true sends a pulse for each update.  
-This can be connected to a controller that runs a Python script.  
-Remember to add ".py" to your script, and set the type to "Module".  
-Write the name of the script without the extension, add a dot and the function to call.  
-For example:
+Scripts are tested and written in a separete repository ![blender-bge-scripts](https://github.com/bvssvni/blender-bge-scripts)
 
-    follow_strict.main
 
-It is a good idea to write Python scripts to behave like AND gates by default.  
-This way, one can interrupt the behavior using other sensors.
-Here is an example that copies the world position of the owner of controller to the owner of actuators:
-
-    import bge
-
-    def main(cont)
-        own = cont.owner
-    
-        # Behave like an AND gate.
-        positive = False
-        for sens in cont.sensors:
-            positive = positive and sens.positive
-    
-        # Copy position to actuator owners.
-        if sens.positive:
-            for act in cont.actuators:
-                act.owner.worldPosition = own.worldPosition
-    
-On Mac, start Blender from the Terminal to get the output from "print" statements.  
-
-    cd ../../Applications/blender.app/Contents/MacOS
-    ./blender
-    
-Some useful functions for debugging:
-
-    dir(obj)    Prints out functions and properties of object or module.
-    
-    print(msg)  Prints out a message to the console.
-    
